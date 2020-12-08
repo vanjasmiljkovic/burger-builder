@@ -114,7 +114,7 @@ class ContactData extends Component {
                 this.setState({loading: false});
                 this.props.history.push('/'); //da ga redirektuje kada klikne na Order na pocetnu stranu
             })
-            .catch(error => {
+            .catch(() => {
                 this.setState({loading: false});
             });
     }
